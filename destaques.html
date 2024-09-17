@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destaques - Roblox RseekerHub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #9B1FC4;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #9B1FC4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+        }
+
+        .highlight-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .highlight-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .highlight-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .highlight-card h3 {
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .highlight-card p {
+            color: #555;
+            text-align: justify;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Destaques</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="seekerSc.html">Scripts</a></li>
+                <li><a href="destaques.html">Destaques</a></li>
+                <li><a href="aboutme.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Nossos Destaques</h1>
+        <div class="highlight-grid">
+            <div class="highlight-card">
+                <h3>Script Popular 1</h3>
+                <p>Este script se destaca pela sua versatilidade e popularidade entre a comunidade, sendo usado em vários jogos Roblox.</p>
+            </div>
+            <div class="highlight-card">
+                <h3>Script Popular 2</h3>
+                <p>Um dos scripts mais procurados, famoso pela sua eficiência e facilidade de uso, especialmente em jogos de combate.</p>
+            </div>
+            <div class="highlight-card">
+                <h3>Script Recomendado 3</h3>
+                <p>Este script está entre os mais recomendados pelos nossos usuários, oferecendo funcionalidades únicas e avançadas.</p>
+            </div>
+            <div class="highlight-card">
+                <h3>Script Top 4</h3>
+                <p>Uma solução de script excelente para aqueles que desejam maximizar sua produtividade em jogos de aventura.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 RSeeker Scripts. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
