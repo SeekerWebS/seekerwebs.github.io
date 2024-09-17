@@ -199,27 +199,29 @@
         <!-- Título com animação de gradiente -->
         <h3 class="title-animated">RseekerHub</h3>
         <p>Um incrível script de doors.</p>
-        <button>Baixar Script</button>
+        <button id="download-button">Baixar Script</button>
 
-        <!-- TAG Fixado e Verificado (Visível/Invisível) -->
         <div id="fixed-tag" class="tag-verified">Fixado e verificado</div>
     </div>
 </div>
 
-<!-- Link para o arquivo CSS externo -->
-<link rel="stylesheet" href="css/styles2.css">
+<link rel="stylesheet" href="css/estilos.css">
 
 <script>
 const isVisible = true;
 const fixedTag = document.getElementById('fixed-tag');
+
 if (isVisible) {
     fixedTag.style.display = 'block';
 } else {
-    fixedTag.style.display = 'none'; 
+    fixedTag.style.display = 'none';
 }
+
+const downloadButton = document.getElementById('download-button');
+downloadButton.addEventListener('click', function() {
+    window.open('scripts/RSeekerHub.html', '_blank');
+});
 </script>
-
-
             <!-- Card de Script 2 -->
             <div class="script-card">
                 <img src="https://source.unsplash.com/300x200/?roblox,games" alt="Script Roblox 2">
