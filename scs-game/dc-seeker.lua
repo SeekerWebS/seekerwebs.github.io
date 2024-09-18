@@ -1,4 +1,4 @@
--- 
+-- Propriedade da Rseeker Scripts
 local ScreenGui = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
