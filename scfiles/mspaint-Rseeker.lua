@@ -1,3 +1,15 @@
+--[[ 
+----------------------------------
+Nome: mspaint
+descrição: cópia disfarçada do Mshub
+por; emanuelmiguel(926113693064912896)
+----------------------------------
+ID: 2
+SITE: https://seekerwebs.github.io/seekerSc.html
+SCRIPT SITE ORIGINAL: https://raw.githubusercontent.com/notpoiu/mspaint/main/places/2440500124.lua
+----------------------------------
+]]--
+
 if not getgenv().mspaint_loaded then
     getgenv().mspaint_loaded = true
 else return end
