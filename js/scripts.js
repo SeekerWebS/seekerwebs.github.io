@@ -1,18 +1,16 @@
-// Configurações Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyClV3SGXw3qNSrH_N4GOpah0T78H5UmNzA",
-  authDomain: "nushmc-56957.firebaseapp.com",
-  projectId: "nushmc-56957",
-  storageBucket: "nushmc-56957.appspot.com",
-  messagingSenderId: "146378589470",
-  appId: "1:146378589470:web:70cbc8db4d72b9bb0a750f"
-
+  apiKey: "AIzaSyDMsK6qFYqW3Tmz5hhkVx3fHhp0KMT066k",
+  authDomain: "seeker-pubs.firebaseapp.com",
+  projectId: "seeker-pubs",
+  storageBucket: "seeker-pubs.appspot.com",
+  messagingSenderId: "299279593372",
+  appId: "1:299279593372:web:af17168511198bbb032259",
+  measurementId: "G-BVFSSD8LYW"
 };
 
-// Inicializa Firebase
-firebase.initializeApp(firebaseConfig);
-const auth = firebase.auth();
-const db = firebase.firestore();
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 // Elementos DOM
 const loginBtn = document.getElementById('login-btn');
