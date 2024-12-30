@@ -1,144 +1,87 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suporte - RSeeker Scripts</title>
-    <meta property="og:type" content="Rseeker | Suporte">
-    <meta property="og:description" content="Suporte | RSeeker Scripts - O seu site de scripts favorito!">
-    <meta property="og:url" content="https://seekerwebs.github.io/index.html">
-    <meta property="og:image" content="https://raw.githubusercontent.com/SeekerWebS/seekerwebs.github.io/main/images/back/logo.png">
-    <link rel="shortcut icon" href="https://raw.githubusercontent.com/SeekerWebS/seekerwebs.github.io/main/images/back/IconFav.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <title>Mscripts - Novo Endereço</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary: #5865F2;
+            --primary-dark: #4752C4;
+            --accent: #FF006E;
+            --background: #1a1b1e;
+            --text: #ffffff;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background);
+            color: var(--text);
+            min-height: 100vh;
             margin: 0;
-            background-color: #101415;
-            color: #9B1FC4;
-        }
-
-        header {
-            background-color: #7300FF;
-            color: black;
-            padding: 20px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
             display: flex;
+            align-items: center;
             justify-content: center;
-            background-color: #9B1FC4;
-        }
-
-        nav ul li {
-            margin: 0 10px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 15px;
-            display: block;
-            transition: background 0.3s;
-        }
-
-        nav ul li a:hover {
-            background-color: #9B1FC4;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
             padding: 20px;
-            background-color: black;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .redirect-container {
+            text-align: center;
+            animation: fadeIn 0.8s ease-out;
+            max-width: 600px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         h1 {
-            text-align: center;
-            margin-bottom: 20px;
-            font-size: 2.5rem;
+            font-family: 'Poppins', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1.5rem;
         }
 
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            line-height: 1.6;
         }
 
-        .contact-form input, 
-        .contact-form textarea {
-            padding: 10px;
-            font-size: 16px;
-            border: 2px solid #ddd;
-            border-radius: 5px;
-            width: 100%;
-        }
-
-        .contact-form button {
-            padding: 10px 15px;
-            background-color: #7300FF;
+        .redirect-button {
+            background: linear-gradient(45deg, var(--primary), var(--accent));
             color: white;
+            padding: 1rem 2rem;
             border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        .contact-form button:hover {
-            background-color: #7300FF;
+        .redirect-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(88,101,242,0.4);
         }
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #101415;
-            color: white;
-            margin-top: 40px;
+        @media (max-width: 480px) {
+            h1 { font-size: 2rem; }
+            p { font-size: 1rem; }
         }
     </style>
 </head>
-
 <body>
-
-    <header>
-        <h1>Contato</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="seekerSc.html">Scripts</a></li>
-                <li><a href="destaques.html">Destaques</a></li>
-                <li><a href="aboutme.html">Sobre Nós</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="container">
-        <h1>Entre em Contato Conosco</h1>
-        <p>Se você tiver alguma dúvida, sugestão ou precisar de suporte, por favor, entre em contato conosco preenchendo o formulário abaixo.</p>
-
-        <!-- Formulário de Contato -->
-        <form class="contact-form" action="#" method="post">
-            <input type="text" name="name" placeholder="Seu Nome" required>
-            <input type="email" name="email" placeholder="Seu Email" required>
-            <textarea name="message" rows="5" placeholder="Sua Mensagem" required></textarea>
-            <button type="submit">Enviar Mensagem</button>
-        </form>
+    <div class="redirect-container">
+        <h1>Mudamos de Endereço!</h1>
+        <p>Estamos agora em um novo endereço com mais recursos e scripts atualizados. Clique no botão abaixo para acessar nosso novo site.</p>
+        <a href="https://mscripts.vercel.app/" class="redirect-button">Ir para o novo site</a>
     </div>
-
-    <footer>
-        <p>&copy; 2024 RSeeker Scripts. Todos os direitos reservados.</p>
-    </footer>
-
 </body>
-
 </html>
-
